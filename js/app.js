@@ -1,17 +1,17 @@
 function alterarStatus(id) {
-    let gameClicado = document.getElementById(`game-${id}`);
-    let imagem = gameClicado.querySelector('.dashboard__item__img');
-    let botao = gameClicado.querySelector('.dashboard__item__button');
+    let gameClicked = document.getElementById(`game-${id}`);
+    let image = gameClicked.querySelector('.dashboard__item__img');
+    let button = gameClicked.querySelector('.dashboard__item__button');
 
-    if(imagem.classList.contains('dashboard__item__img--rented')){
-        imagem.classList.remove('dashboard__item__img--rented');
-        botao.textContent = 'Alugar';
-        botao.classList.remove('dashboard__item__button--return')
+    if(image.classList.contains('dashboard__item__img--rented')){
+        image.classList.remove('dashboard__item__img--rented');
+        button.textContent = 'Alugar';
+        button.classList.remove('dashboard__item__button--return')
 
     }else{
-        imagem.classList.add('dashboard__item__img--rented');
-        botao.textContent = 'Devolver';
-        botao.classList.add('dashboard__item__button--return')
+        image.classList.add('dashboard__item__img--rented');
+        button.textContent = 'Devolver';
+        button.classList.add('dashboard__item__button--return')
     }
 }
 
